@@ -1,0 +1,14 @@
+.nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.navbar {
+    width: 390px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

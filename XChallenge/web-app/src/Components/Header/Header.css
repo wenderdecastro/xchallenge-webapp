@@ -1,0 +1,7 @@
+.header-flex {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+}

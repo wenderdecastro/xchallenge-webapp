@@ -1,0 +1,24 @@
+.testes-flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-teste {
+    background-color: rgb(157, 170, 16);
+    width: 500px;
+    height: 500px;
+}
+
+.box-teste input:focus {
+   background-color: red;
+   position: static;
+   z-index: 100;
+}
+
+.fechar {
+    font-size: 50px;
+    color: red;
+}
