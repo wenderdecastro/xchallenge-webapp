@@ -1,0 +1,64 @@
+.background-login {
+  background-image: url("../../Assets/Images/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 670px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.form-login {
+  width: 506px;
+  height: 342px;
+  border-radius: 15px;
+  background: #061425;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.form-login h1 {
+  color: #fff;
+  font-family: Bebas_Neue;
+  font-size: 32px;
+}
+
+.form-login input {
+  width: 391px;
+  height: 40px;
+  border-radius: 15px;
+  background: #fff;
+  padding-left: 15px;
+}
+
+.form-login input::placeholder {
+  color: #061425;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.form-login button {
+  width: 271px;
+  height: 35px;
+  border-radius: 22px;
+  background: #37ff76;
+  color: #061425;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}

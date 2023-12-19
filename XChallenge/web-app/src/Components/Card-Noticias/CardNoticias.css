@@ -1,0 +1,29 @@
+
+.card-box {
+  width: 195px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.paragrafo-card {
+  width: 145px;
+  height: 162px;
+  font-family: Poppins;
+  font-size: 16px;
+  text-align: center;
+}
+
+.date-card {
+  font-family: Bebas_Neue;
+  font-size: 24px;
+}
+
+.ver-noticias {
+  width: 100%;
+  display: grid;
+  justify-content: flex-end;
+  padding: 15px;
+}

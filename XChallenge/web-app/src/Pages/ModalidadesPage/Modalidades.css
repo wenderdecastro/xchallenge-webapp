@@ -1,0 +1,50 @@
+.barra-pesquisa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barra-pesquisa img {
+  width: 33px;
+  height: 33px;
+}
+
+.barra-pesquisa label {
+  color: #061425;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.barra {
+  width: 586px;
+  height: 37px;
+  border-radius: 15px;
+  background: #061425;
+}
+
+.barra::placeholder {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.tabela-modalidade {
+  width: 762px;
+  height: 427px;
+  border-radius: 15px;
+  background: #061425;
+  padding-left: 35px;
+}
+
+.tabela-modalidade th {
+  color: #fff;
+  font-family: Bebas_Neue;
+  font-size: 32px;
+}
+
+.tabela-modalidade td {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+}

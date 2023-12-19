@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Bebas_Neue;
+    src: url("../../Assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+.titulo {
+    padding-top: 30px;
+    font-family: Bebas_Neue;
+    font-size: 64px;
+    text-align: center;
+}

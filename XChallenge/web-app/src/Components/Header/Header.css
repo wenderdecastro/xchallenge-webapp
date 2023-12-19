@@ -1,7 +1,15 @@
-.header-flex {
-    height: 50px;
+.header-flex-dark {
+    height: 104px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px black solid;
+    background-color: #061425;
+}
+
+.header-flex-light {
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }

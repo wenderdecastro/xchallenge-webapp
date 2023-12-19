@@ -1,7 +1,126 @@
 .footer-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 480px;
+}
+
+.column-xchallenge {
+  width: 408px;
+  height: 359px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tit-column {
+  width: 400px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tit-column img {
+  width: 45px;
+  height: 66px;
+}
+
+.links-footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.links-footer a {
+  font-family: Bebas_Neue;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+}
+
+.column-redes-sociais {
+  width: 408px;
+  height: 359px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes {
+  width: 100%;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+/* Light Mode */
+.redes a {
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Bebas_Neue;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+}
+
+.redes img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Dark Mode */
+.redes-dark {
+  width: 100%;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.redes-dark a {
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Bebas_Neue;
+  font-size: 48px;
+  text-decoration: none;
+  color: white;
+}
+
+.redes-dark img {
+  width: 40px;
+  height: 40px;
+  filter: invert();
+  mix-blend-mode: lighten;
+}
+
+#logo-dark-mode {
+  filter: invert();
+}
+
+#face:hover {
+  color: #144ad4;
+  transition: 0.3s;
+}
+
+#twitter:hover {
+  color: #00aee7;
+  transition: 0.3s;
+}
+#youTube:hover {
+  color: #e82c38;
+  transition: 0.3s;
 }

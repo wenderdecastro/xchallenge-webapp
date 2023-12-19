@@ -1,14 +1,49 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../Assets/Fonts/Poppins/Poppins-Medium.ttf");
+}
+
+.user-icon img {
+  width: 67px;
+  height: 50px;
+  /* filter: invert(2);
+    mix-blend-mode: lighten; */
+}
+
+/* Dark mode */
 .nav-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  font-family: Poppins;
+  color: white;
+}
+
+.nav-flex a {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar {
-    width: 390px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 390px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-flex-light a {
+  text-decoration: none;
+  color: black;
+}
+
+.logout-link {
+  width: 159px;
+  height: 35px;
+  border-radius: 22px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #e82c38;
 }

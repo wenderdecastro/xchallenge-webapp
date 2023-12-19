@@ -1,0 +1,44 @@
+.background-home {
+  background-image: url("../../Assets/Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 992px;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ultimas-noticias {
+  height: 427px;
+}
+
+.noticias-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nossos-parceiros {
+  background-color: #ffc737;
+  height: 582px;
+}
+
+.parceiros-box {
+  height: 392px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parceiros-box p {
+  font-size: 20px;
+  padding: 50px;
+}
+
+.parceiros-box p:hover {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}

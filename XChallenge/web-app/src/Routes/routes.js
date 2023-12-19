@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //Components
 import Header from "../Components/Header/Header";
@@ -11,9 +11,10 @@ import Resultados from "../Pages/ResultadosPage/Resultados";
 import MeuPerfil from "../Pages/MeuPerfilPage/MeuPerfil";
 import Modalidades from "../Pages/ModalidadesPage/Modalidades";
 import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
-import Testes from "../Pages/TestesPage/TestesPage"
+import Testes from "../Pages/TestesPage/TestesPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeContext } from "../Context/ThemeContext";
 
 const routes = () => {
   return (
@@ -28,9 +29,8 @@ const routes = () => {
 
         <Route element={<NotFoundPage />} path="/not-found" />
 
-        <Route element={<Testes/>} path="/testes"/>
+        <Route element={<Testes />} path="/testes" />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 };
