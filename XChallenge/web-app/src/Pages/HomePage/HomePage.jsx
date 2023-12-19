@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 import "./HomePage.css";
 
@@ -13,6 +13,10 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const { theme, useTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    
+  } ,[])
 
   return (
     <main className="home-flex">

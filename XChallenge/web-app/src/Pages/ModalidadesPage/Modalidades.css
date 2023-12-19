@@ -1,3 +1,11 @@
+.modalidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+}
+
 .barra-pesquisa {
     display: flex;
     justify-content: space-evenly;
