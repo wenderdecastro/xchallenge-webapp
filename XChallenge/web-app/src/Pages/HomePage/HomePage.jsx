@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 import "./HomePage.css";
 
@@ -11,12 +11,25 @@ import CardNoticias from "../../Components/Card-Noticias/CardNoticias";
 import Container from "../../Components/Container/Container";
 import { Link } from "react-router-dom";
 
+import api from "../../Services/Services";
+
 const HomePage = () => {
   const { theme, useTheme } = useContext(ThemeContext);
+  const [noticias, setNoticias] = useState([]);
 
   useEffect(() => {
-    
-  } ,[])
+    async function loadNoticias() {
+      try {
+        const promiseNoticias = await api.get("/Noticium");
+        console.log(promiseNoticias.data);
+        setNoticias(promiseNoticias.data);
+      } catch (error) {
+        console.log("erro");
+      }
+    }
+
+    loadNoticias();
+  }, []);
 
   return (
     <main className="home-flex">
@@ -46,51 +59,25 @@ const HomePage = () => {
           </Link>
 
           <div className="noticias-box">
-            <CardNoticias
-              backColor={theme === "dark" ? "#FFC737" : "black"}
-              color={theme === "dark" ? "black" : "white"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ullamcorper libero. "
-              }
-              date={"12-12-2023"}
-            />
-
-            <CardNoticias
-              backColor={theme === "dark" ? "#FFC737" : "black"}
-              color={theme === "dark" ? "black" : "white"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ullamcorper libero. "
-              }
-              date={"12-12-2023"}
-            />
-
-            <CardNoticias
-              backColor={theme === "dark" ? "#FFC737" : "black"}
-              color={theme === "dark" ? "black" : "white"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ullamcorper libero. "
-              }
-              date={"12-12-2023"}
-            />
-
-            <CardNoticias
-              backColor={theme === "dark" ? "#FFC737" : "black"}
-              color={theme === "dark" ? "black" : "white"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis ullamcorper libero. "
-              }
-              date={"12-12-2023"}
-            />
+            {noticias.map((e) => {
+              return (
+                <CardNoticias
+                  backColor={theme === "dark" ? "#FFC737" : "black"}
+                  color={theme === "dark" ? "black" : "white"}
+                  text={
+                    e.noticia.substr(0, 50) + "..."
+                  }
+                  date={"12-12-2023"}
+                />
+              );
+            })}
           </div>
         </Container>
       </section>
 
       <section className="nossos-parceiros">
         <Container>
-          <Title 
-            textTitle={"Nossos Parceiros"}
-            colorTitle={"black"}
-          />
+          <Title textTitle={"Nossos Parceiros"} colorTitle={"black"} />
 
           <div className="parceiros-box">
             <p>Parceiro</p>
